@@ -8,7 +8,8 @@ command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERS="
-1.1.1.1#cloudflare 
+1.1.1.1#cloudflare
+213.80.98.2#Bahnhof
 4.2.2.1#level3 
 8.8.8.8#google 
 9.9.9.9#quad9 
@@ -23,7 +24,7 @@ PROVIDERS="
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com whatsapp.com"
+DOMAINS2TEST="www.google.se www.aftonbladet.se facebook.com www.youtube.com www.expressen.se wikipedia.org twitter.com www.ifkuppsala.se www.barnbokhandeln.com www.unt.se"
 
 
 totaldomains=0
